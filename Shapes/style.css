@@ -1,0 +1,144 @@
+table{
+    border: 1px solid;
+    border-collapse: collapse;
+}
+td{
+    padding: 20px;
+    border: 1px solid;
+    text-align: center;
+}
+
+.square{
+    height: 100px;
+    width: 100px;
+    background: #FF5733;
+}
+
+.tilted-square{
+    height: 100px;
+    width: 100px;
+    background: #FF5733;
+    transform: rotate(45deg);
+    margin: 0 10px 10px;
+}
+
+.rectangle{
+    height: 100px;
+    width: 150px;
+    background: #FF8333;
+}
+
+.rounded-rectangle{
+    height: 100px;
+    width: 150px;
+    background: #FFCA33;
+    border-radius: 20px;
+}
+
+.circle{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background: #FCFF33;
+}
+
+.semi-circle{
+    height: 70px;
+    width: 125px;
+    background: #BEFF33;
+    border-radius: 50% / 100% 100% 0 0;
+}
+
+.oval{
+    height: 100px;
+    width: 150px;
+    border-radius: 50%;
+    background: #71FF33;
+}
+
+.triangle{
+    height: 0;
+    width: 0;
+    border: 50px solid transparent;
+    border-top: 0;
+    border-bottom: 100px solid #33FF3F;
+}
+
+.triangle-down{
+    height: 0;
+    width: 0;
+    border: 50px solid transparent;
+    border-bottom: 0;
+    border-top: 100px solid #33FF7A;
+}
+
+.triangle-right{
+    height: 0;
+    width: 0;
+    border: 50px solid transparent;
+    border-right: 0;
+    border-left: 100px solid #33FFBB;
+}
+
+.triangle-left{
+    height: 0;
+    width: 0;
+    border: 50px solid transparent;
+    border-left: 0;
+    border-right: 100px solid #33FFF9;
+}
+
+.triangle-topleft{
+    height: 0;
+    width: 0;
+    border-top: 100px solid #33C4FF;
+    border-right: 100px solid transparent;
+}
+
+.triangle-topright{
+    height: 0;
+    width: 0;
+    border-top: 100px solid #3396FF;
+    border-left: 100px solid transparent;
+}
+
+.triangle-bottomleft{
+    height: 0;
+    width: 0;
+    border-bottom: 100px solid #336BFF;
+    border-right: 100px solid transparent;
+}
+
+.triangle-bottomright{
+    height: 0;
+    width: 0;
+    border-bottom: 100px solid #4C33FF;
+    border-left: 100px solid transparent;
+}
+
+.heart{
+    height: 60px;
+    width: 60px;
+    background: #ff0000;
+    transform: rotate(45deg);
+    position: relative;
+    margin-left: 20px;
+}
+
+.heart::before, .heart::after{
+    content: '';
+    background: inherit;
+    height: inherit;
+    width: inherit;
+    display: block;
+    position: absolute;
+    border-radius: 50%;
+}
+
+.heart::before{
+    bottom: 30px;
+}
+
+.heart::after{
+    right: 30px;
+}
